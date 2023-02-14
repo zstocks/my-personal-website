@@ -1,0 +1,119 @@
+/* Fonts:
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Slab', serif;
+*/
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    font-family: 'Roboto Slab', serif;
+}
+
+p, a, button, span {
+    font-family: 'Roboto', sans-serif;
+}
+
+p {
+    line-height: 1.5;
+}
+
+.container {
+    margin: 2rem 8rem;
+}
+
+#nav {
+    border-bottom: 1px solid #000;
+    padding-bottom: 1rem;
+}
+
+#nav > #name {
+    padding: 1rem 0 0;
+    margin: 0;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+#nav > #personal-links {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    margin: 0.5rem 0 0;
+    justify-content: center;
+}
+
+#resume-btn {
+    padding: 0.5rem;
+    border-radius: 5px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+}
+
+#resume-btn:hover {
+    box-shadow: 2px 2px 5px #000;
+}
+
+#intro {
+    display: flex;
+    justify-content: center;
+}
+
+#intro > div {
+    margin: 0 2rem;
+    max-width: 40rem;
+}
+
+#intro > img {
+    margin-top: 5.5rem;
+}
+
+#projects {
+    display: flex;
+    justify-content: center;
+}
+
+#projects > ul {
+    width: 70%;
+    padding: 0;
+}
+
+.project-tab {
+    width: 100%;
+    border: 1px solid #e6e6e6;
+    border-bottom: 0;
+    overflow: hidden;
+}
+
+.project-tab:last-of-type {
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.project-title {
+    position: relative;
+    display: block;
+    padding: 1.25rem 1rem;
+    font-size: 1.1rem;
+    line-height: 1;
+    text-decoration: none;
+}
+
+.project-title:hover {
+    text-decoration: underline;
+    background-color: #e6e6e6;
+}
+
+.project-content {
+    display: none;
+    height: 0;
+    width: 100%;
+    padding: 1rem;
+    border-top: 1px solid #e6e6e6;
+}
+
+.is-active > div {
+    display: block;
+    height: 100%;
+}
