@@ -1,8 +1,15 @@
 /* Fonts:
     font-family: 'Roboto', sans-serif;
     font-family: 'Roboto Slab', serif;
+
+    Color Theme:
+     Dark: #4C4A59
+     Low: #1B7F7A
+     Mid: #0897B4
+     High: #4CABA6
+     Light: #F2CDAC
 */
-body {
+body, html {
     margin: 0;
     padding: 0;
 }
@@ -17,6 +24,111 @@ p, a, button, span {
 
 p {
     line-height: 1.5;
+}
+
+#hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+#hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/hero-banner-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    filter: brightness(80%);
+}
+
+@media only screen and (min-width: 500px) {
+
+    #hero::before {
+        background: url(../img/hero-banner-large.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+}
+
+#hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    max-width: 100%;
+    color: #F2CDAC;
+}
+
+@media only screen and (min-width: 500px) {
+    #hero-content {
+        align-items: start;
+        top: 50%;
+        right: 5%;
+        transform: translateY(-50%);
+        width: 40%;
+    }
+}
+
+#hero-content h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+#hero-content .intro {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 1rem;
+}
+
+@media only screen and (min-width: 500px) {
+    #hero-content .intro {
+        margin-top: 0;
+        text-align: left;
+        font-size: 1.5rem;
+    }
+}
+
+#hero-content span{
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+@media only screen and (min-width: 500px) {
+    #hero-content span {
+        text-align: left;
+        font-size: 1.8rem;
+    }
+}
+
+#hero-content h1 > span {
+    font-size: 2.8rem;
+}
+
+.intro-button {
+    max-width: 10rem;
+    padding: 1.2rem 1.5rem;
+    background-color: #1B7F7A;
+    color: #F2CDAC;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.4rem;
+    border-radius: 5px;
+    border: 1px solid #000;
+}
+
+.intro-button:hover {
+    box-shadow: 2px 2px 5px #000;
+}
+
+.intro-button:visited {
+    color: #F2CDAC;
 }
 
 .container {

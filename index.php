@@ -15,7 +15,16 @@
     </head>
     <body>
 
-        <div id="nav">
+        <div id="hero">
+            <div id="hero-content">
+                <h1>Hi, I'm <span class="emphasized">Zach</span>,</h1>
+                <p class="intro">an experienced front-end and burgeoning full stack <span class="emphasized">web developer</span>, <span class="emphasized">content creator</span>, and <span class="emphasized">lover of learning</span>. You might say, I'm a Zach of all trades...</p>
+                <p class="intro">What can I do for you?</p>
+                <a href="#" class="intro-button">View Resume</a>
+            </div>
+        </div>
+
+        <!-- <div id="nav">
             <p id="name">Zachary Stocks</p>
             <ul id="personal-links">
                 <li><a id="resume-btn" href="#">View Resume</a></li>
@@ -35,7 +44,7 @@
                 <p>I aim to use this website as a place to showcase the projects that I've built as I continue to improve my skillset and challenge myself in new ways.</p> 
                 <p>Check out some of my projects below ↓</p>
             </div>
-        </div>
+        </div> -->
 
         <div class="container" id="projects">
             <ul>
