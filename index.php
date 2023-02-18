@@ -15,6 +15,12 @@
     </head>
     <body>
 
+        <div id="nav">
+            <ul id="links">
+                <li><a href="#projects">My Projects</a></li>
+            </ul>
+        </div>
+
         <div id="hero">
             <div id="hero-content">
                 <h1>Hi, I'm <span class="emphasized">Zach</span>,</h1>
