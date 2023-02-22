@@ -147,7 +147,7 @@ p {
 #nav ul {
     display: inline-block;
     list-style-type: none;
-    margin: 0.5rem 0;
+    margin: 0.6rem 0;
 }
 
 #nav a {
@@ -209,4 +209,8 @@ p {
 .is-active > div {
     display: block;
     height: 100%;
+}
+
+.project-content > div {
+    display: flex;
 }
