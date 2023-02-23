@@ -132,7 +132,13 @@ p {
 }
 
 .container {
-    margin: 2rem 8rem;
+    margin: 0;
+}
+
+@media only screen and (min-width: 500px) {
+    .container {
+        margin: 2rem 8rem;
+    }
 }
 
 #nav {
@@ -168,9 +174,21 @@ p {
     justify-content: center;
 }
 
+@media only screen and (min-width: 500px) {
+    #projects {
+        flex-direction: row;
+    }
+}
+
 #projects > ul {
-    width: 80%;
+    width: 95%;
     padding: 0;
+}
+
+@media only screen and (min-width: 500px) {
+    #projects > ul {
+        width: 80%;
+    }
 }
 
 .project-tab {
@@ -202,8 +220,14 @@ p {
     display: none;
     height: 0;
     width: 100%;
-    padding: 1rem;
+    padding: 1rem 0;
     border-top: 1px solid #e6e6e6;
+}
+
+@media only screen and (min-width: 500px) {
+    .project-content {
+        padding: 1rem;
+    }
 }
 
 .is-active > div {
@@ -213,6 +237,23 @@ p {
 
 .project-content > div {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media only screen and (max-width: 500px) {
+    .project-details {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 1rem;
+    }
+}
+
+@media only screen and (min-width: 500px) {
+    .project-content > div {
+        flex-direction: row;
+        align-items: start;
+    }
 }
 
 .project-button {
@@ -233,7 +274,15 @@ p {
 }
 
 .project-details > img {
+    display: block;
     border: 1px solid #e1e1e1;
+    margin: auto;
+}
+
+@media only screen and (min-width: 500px) {
+    .project-details > img {
+        margin: 0;
+    }
 }
 
 .project-details p {
@@ -243,10 +292,16 @@ p {
 
 .project-details > ul {
     padding-left: 0.6rem;
-    margin: .5rem 0 0 .5rem;
+    margin: .5rem 0 2rem .5rem;
     list-style-type: none;
     border-left: 4px solid #4C4A59;
     font-family: 'Roboto', sans-serif;
+}
+
+@media only screen and (min-width: 500px) {
+    .project-details > ul {
+        margin-bottom: 0;
+    }
 }
 
 .project-details li {
@@ -258,7 +313,13 @@ p {
 }
 
 .project-summary {
-    padding: 0 3rem;
+    padding: 0 1rem;
+}
+
+@media only screen and (min-width: 500px) {
+    .project-summary {
+        padding: 0 3rem;
+    }
 }
 
 .project-summary p:first-of-type {
