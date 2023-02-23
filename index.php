@@ -16,6 +16,8 @@
     <body>
 
         <div id="nav">
+            <span id="triple-bar">&equiv;</span>
+            <span id="cross">X</span>
             <ul id="links">
                 <li><a href="#projects">My Projects</a></li>
             </ul>
@@ -35,5 +37,21 @@
         </div>
         
         <script src="js/project-dropdown.js"></script>
+        <script>
+            const navOpen = document.querySelector('#triple-bar');
+            const navClose = document.querySelector('#cross');
+            const nav = document.querySelector('#nav');
+            navOpen.addEventListener('click', () => {
+                nav.style.height = '22.3rem';
+                navClose.style.display = 'block';
+                navOpen.style.display = 'none';
+            });
+            navClose.addEventListener('click', () => {
+                nav.style.height = '2.3rem';
+                navOpen.style.display = 'block';
+                navClose.style.display = 'none';
+            });
+            
+        </script>
     </body>
 </html>

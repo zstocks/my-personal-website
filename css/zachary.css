@@ -61,8 +61,10 @@ p {
     flex-direction: column;
     align-items: center;
     position: absolute;
-    width: 100%;
-    max-width: 100%;
+    top: 2.5rem;
+    padding: 0 1rem;
+    /* width: 100%;
+    max-width: 100%; */
     color: #F2CDAC;
 }
 
@@ -145,15 +147,42 @@ p {
     position: fixed;
     width: 100%;
     height: 2.3rem;
-    padding: 0 20%;
+    padding: 0 1.5rem;
     z-index: 10;
     background-color: rgba(0, 0, 0, 0.8);
+    transition: height .5s;
+    overflow: hidden;
+}
+
+@media only screen and (min-width: 500px) {
+    #nav {
+        height: 2.3rem;
+        padding: 0 20%;
+    }
 }
 
 #nav ul {
     display: inline-block;
+    position: absolute;
+    height: 20rem;
+    width: 100%;
     list-style-type: none;
-    margin: 0.6rem 0;
+    padding: 0;
+    margin: 0;
+    /* margin: 0.6rem 0; */
+}
+
+#nav li {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(calc(-50% - 3.5rem), -50%);
+}
+
+@media only screen and (min-width: 500px) {
+    #nav ul {
+        position: relative;
+    }
 }
 
 #nav a {
@@ -167,6 +196,25 @@ p {
 
 #nav a:visited {
     color: #F2CDAC;
+}
+
+#nav #triple-bar {
+    font-size: 2rem;
+    color: #F2CDAC;
+    cursor: pointer;
+}
+
+#nav #cross {
+    display: none;
+    font-size: 2rem;
+    color: #F2CDAC;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 500px) {
+    #nav #triple-bar {
+        display: none;
+    }
 }
 
 #projects {
