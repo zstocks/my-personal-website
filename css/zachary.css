@@ -169,7 +169,7 @@ p {
 }
 
 #projects > ul {
-    width: 70%;
+    width: 80%;
     padding: 0;
 }
 
@@ -213,4 +213,54 @@ p {
 
 .project-content > div {
     display: flex;
+}
+
+.project-button {
+    display: block;
+    padding: 1rem 1.5rem;
+    margin: 0.5rem 0;
+    background-color: #1B7F7A;
+    color: #F2CDAC;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.project-button:hover {
+    box-shadow: 2px 2px 5px #000;
+}
+
+.project-details > img {
+    border: 1px solid #e1e1e1;
+}
+
+.project-details p {
+    margin: 0;
+    font-weight: bold;
+}
+
+.project-details > ul {
+    padding-left: 0.6rem;
+    margin: .5rem 0 0 .5rem;
+    list-style-type: none;
+    border-left: 4px solid #4C4A59;
+    font-family: 'Roboto', sans-serif;
+}
+
+.project-details li {
+    padding: 0.2rem 0;
+}
+
+.project-details hr {
+    margin: 1.3rem 0;
+}
+
+.project-summary {
+    padding: 0 3rem;
+}
+
+.project-summary p:first-of-type {
+    margin-top: 0;
 }

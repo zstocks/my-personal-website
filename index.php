@@ -38,8 +38,10 @@
                     <div class="project-content">
                         <div>
                             <div class="project-details">
-                                <img src="https://via.placeholder.com/250" alt="project screenshot image."><br>
-                                <a href="#">Button Here</a>
+                                <img src="img/usu-stars.jpg" alt="project screenshot image."><br>
+                                <a class="project-button" href="#">Launch Project</a>
+                                <hr>
+                                <p>Tools used</p>
                                 <ul>
                                     <li>HTML</li>
                                     <li>CSS</li>
