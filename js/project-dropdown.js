@@ -1,5 +1,4 @@
-const projectTabs = Array.from(document.getElementsByClassName('project-tab'));
-
+const projectList = document.querySelector('#projects>ul');
 const projects = [
     {
         title: 'USU STARS! GEAR UP Website',
@@ -44,7 +43,42 @@ const projects = [
     }
 ]
 
+const renderProjects = arr => {
+    let html = ``;
+    for (let i = 0; i < arr.length; i++) { 
+        html += `<li class="project-tab`;
+        if (i === 0) { 
+            html += ` is-active`;
+        }
+        html += `">
+                <a href="#" class="project-title">${arr[i].title}</a>
+                <div class="project-content">
+                <div>
+                <div class="project-details">
+                <img src="${arr[i].img}" alt="${arr[i].imgAlt}"><br>
+                <a class="project-button" href="${arr[i].link}" target="_blank">Launch Project</a><hr>
+                <p>Tools used</p>
+                <ul>`;
+        for (let t = 0; t < arr[i].tools.length; t++) { 
+            html += `<li>${arr[i].tools[t]}</li>`;
+        }
+        html += `</ul>
+                </div>
+                <div class="project-summary">
+                <p>${arr[i].summary}</p>
+                </div>
+                </div>
+                </div>
+                </li>
+        `;
+    }
+    projectList.insertAdjacentHTML('beforeend', html);
+    projectList.insertAdjacentHTML('afterbegin', '<h2>My Projects</h2>');
+}
+ 
+renderProjects(projects);
 
+const projectTabs = Array.from(document.getElementsByClassName('project-tab'));
 
 projectTabs.forEach(tab => {
     tab.addEventListener('click', (e) => {

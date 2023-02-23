@@ -31,42 +31,7 @@
         </div>
 
         <div class="container" id="projects">
-            <ul>
-                <h2>My Projects</h2>
-                <li class="project-tab is-active">
-                    <a href="#" class="project-title">USU STARS! GEAR UP Website</a>
-                    <div class="project-content">
-                        <div>
-                            <div class="project-details">
-                                <img src="img/usu-stars.jpg" alt="project screenshot image."><br>
-                                <a class="project-button" href="#">Launch Project</a>
-                                <hr>
-                                <p>Tools used</p>
-                                <ul>
-                                    <li>HTML</li>
-                                    <li>CSS</li>
-                                    <li>OmniCMS (Content Management System)</li>
-                                </ul>
-                            </div>
-                            <div class="project-summary">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae incidunt iusto unde tempore voluptate officiis rem consequuntur deserunt assumenda perferendis, sunt accusamus, asperiores placeat accusantium porro molestias possimus facilis obcaecati.</p>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li class="project-tab">
-                    <a href="#" class="project-title">GEAR UP for College Website</a>
-                    <div class="project-content">
-                        All project info goes here.
-                    </div>
-                </li>
-                <li class="project-tab">
-                    <a href="#" class="project-title">GEAR UP Site Coordinator Manual</a>
-                    <div class="project-content">
-                        All project info goes here.
-                    </div>
-                </li>
-            </ul>
+            <ul></ul>
         </div>
         
         <script src="js/project-dropdown.js"></script>
