@@ -36,7 +36,7 @@
             <ul></ul>
         </div>
         
-        <script src="js/project-dropdown.js"></script>
+        <script src="js/projects.js"></script>
         <script>
             const navOpen = document.querySelector('#triple-bar');
             const navClose = document.querySelector('#cross');
@@ -56,7 +56,7 @@
                 navClose.classList.replace('show', 'hide');
                 navClose.style.display = 'none';
             }
-            
+
             navOpen.addEventListener('click', open);
             navClose.addEventListener('click', close);
             navLinks.forEach(link => {
@@ -66,7 +66,6 @@
                     }
                 });
             });
-            
         </script>
     </body>
 </html>
