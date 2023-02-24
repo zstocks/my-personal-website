@@ -19,7 +19,8 @@
             <span id="triple-bar">&equiv;</span>
             <span class="hide" id="cross">X</span>
             <ul id="links">
-                <li><a href="#projects">My Projects</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="files/zachary-stocks-resume.pdf" target="_blank">Resume</a></li>
             </ul>
         </div>
 
@@ -28,7 +29,7 @@
                 <h1>Hi, I'm <span class="emphasized">Zach</span>,</h1>
                 <p class="intro">an experienced front-end and burgeoning full stack <span class="emphasized">web developer</span>, <span class="emphasized">content creator</span>, and <span class="emphasized">lover of learning</span>. You might say, I'm a Zach of all trades...</p>
                 <p class="intro">What can I do for you?</p>
-                <a href="#" class="intro-button">View Resume</a>
+                <a class="intro-button" href="files/zachary-stocks-resume.pdf" target="_blank">View Resume</a>
             </div>
         </div>
 
